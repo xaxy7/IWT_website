@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEine</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <!-- <link rel="stylesheet" href="./styles/flexbox.css"> -->
+    <link rel="stylesheet" href="../styles/flexbox2.css">
+    <link rel="stylesheet" href="../styles/mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&display=swap" rel="stylesheet">
+    <script>
+        let check = false;
+        function toggleNav() {
+            if(check === false)
+            {
+                document.querySelector(".navlist").style.display =  "block";
+                check = true;
+            }
+            else{
+                document.querySelector(".navlist").style.display =  "none";
+                check = false;
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <header>
+            <div class="logo">
+                <p><span class="jaro-logo">CODE</span>ine </p>
+                </div>
+            <nav class="navigation">
+                <ul class="navlist">
+                    <li class="navlink"><a class="flex-nav-item-1" href="../index.html">HOME</a></li>
+                    <li class="navlink"><b class="bnav"id="currentSite">Our offer <i class="arrow down"></i> </b>
+                        <ul class="drop-menu">
+                            <li class="navlink"><a href="./cpp.html">C++</a></li>
+                            <li class="navlink"><a href="./javascript.html" >Java</a></li>
+                        </ul>
+                    </li>
+                    <li class="navlink"><a class="flex-nav-item-3" href="./aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="more" onclick="toggleNav()">
+                <img src="../images/burger-menu-svgrepo-com.svg" alt="More" id="burger">
+            </div>
+
+        
+
+        </header>
+        <hr>
+        <main class="codeMain">
+            <div class="codeSiteDiv">
+                <img  class="codeSiteImg" src="../images/javacoding.png" alt="">
+                <div class="offerContainer2">
+                    <p class="offerHeadline">Java <img id="imgCpp" src="../images/java.png" alt=""></p>
+                    <p class="codeIndepth">
+                        This beginner-friendly course introduces Java, covering variables, data types, control flow, and methods. Students will also explore object-oriented principles like encapsulation and inheritance. Through hands-on projects, they’ll confidently create and debug basic Java applications, building a strong foundation for advanced learning.
+                        <br><br>Start: January 2025 | End: September 2025
+                        <br>Meetings: Every Monday | 8:00 | 2,5h <br>   
+                        <br>Contact information: <a class="buttonAboutUs" href="../pages/aboutus.html">About us ↗</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>

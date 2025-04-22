@@ -1,0 +1,7 @@
+@font-face {
+    font-family: "Jarotest";
+    src: url(../Jaro-Regular-VariableFont_opsz.ttf);
+}
+body {
+    font-family: "Jarotest";
+}
